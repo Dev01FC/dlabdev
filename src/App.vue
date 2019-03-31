@@ -8,7 +8,7 @@
       <router-link to="/workshops">Workshops</router-link> |
       <router-link to="/team">Team</router-link> |
       <router-link to="/book">Book</router-link> |
-      <router-link to="/projects">Projects</router-link> |
+      <router-link to="/projects">Projects</router-link>
     </div>
     <router-view/>
   </div>
