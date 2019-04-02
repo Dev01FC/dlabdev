@@ -251,10 +251,52 @@
                             </div>
                             <!-- End Section Title -->
 
+                            <style>
+                            @keyframes blink {
+    0% {
+           background-color: #FFFFFF
+    }
+    50% {
+           background-color: #f8d5b2
+    }
+    100% {
+           background-color: #fcb873
+    }
+}
+@-webkit-keyframes blink {
+    0% {
+           background-color: #FFFFFF
+    }
+    50% {
+           background-color: #f8d5b2
+    }
+    100% {
+           background-color: #fcb873
+    }
+}
+
+ .download {
+
+
+    -moz-transition:all 0.5s ease-in-out;
+    -webkit-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    -ms-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;
+    -moz-animation:blink normal 1.5s infinite ease-in-out;
+    /* Firefox */
+    -webkit-animation:blink normal 1.5s infinite ease-in-out;
+    /* Webkit */
+    -ms-animation:blink normal 1.5s infinite ease-in-out;
+    /* IE */
+    animation:blink normal 1.5s infinite ease-in-out;
+    /* Opera */
+}
+                            </style>
                             <!-- Start Service Slider Arrows -->
                             <div class="ht-slick-arrows">
                                 <button id="service-prev"><i class="fa fa-angle-left"></i></button>
-                                <button id="service-next"><i class="fa fa-angle-right"></i></button>
+                                <button id="service-next" class="download"><i class="fa fa-angle-right "></i></button>
                             </div>
                             <!-- End Service Slider Arrows -->
                         </div>
@@ -262,7 +304,7 @@
                         <!-- Start Service Content Inner -->
                         <div class="service-content-inner">
                             <div class="ht-slick-wrapper">
-                                <div class="ht-slick-slider slick-row-30" data-slick='{"slidesToShow": 2, "prevArrow":"#service-prev", "nextArrow":"#service-next", "responsive":[{"breakpoint": 992,"settings":{"slidesToShow": 1}}]}'>
+                                <div class="ht-slick-slider slick-row-30" data-slick='{"slidesToShow": 2, "prevArrow":"#service-prev", "nextArrow":"#service-next", "responsive":[{"breakpoint": 992,"settings":{"slidesToShow": 10}}]}'>
                                     <!-- Start Single Service Item -->
                                     <div class="service-item">
                                         <figure class="service-item__thumb">
@@ -688,7 +730,7 @@
                 <div class="col-lg-10 m-auto">
                     <!-- Start Section Title -->
                     <div class="section-title-wrap layout--2 white mb-38">
-                        <h2>Wat anderen ervoeren</h2>
+                        <h2>Ervaringen van anderen</h2>
                     </div>
                     <!-- End Section Title -->
                 </div>
